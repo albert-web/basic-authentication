@@ -15,6 +15,6 @@ const styles = {
         margin: '0 auto'
         , padding: '50px 100px'
     }
-}
+};
 
 export default Container;
