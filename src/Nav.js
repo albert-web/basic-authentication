@@ -9,7 +9,7 @@ HomeOutlined
 '@ant-design/icons'
 
 const Nav = ({current}) => {
-    
+    return(
 <div>
 <Menu 
         selectedKeys={[current]} 
@@ -36,7 +36,7 @@ const Nav = ({current}) => {
     </Menu>
 </div>
 
-   
+    )  
 
 }
 
