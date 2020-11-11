@@ -20,18 +20,27 @@ const Nav = ({current}) => {
             <HomeOutlined />
                 Home
             </Link>
-        </Menu.Item>
-            <Menu.Item 
+    </Menu.Item>
+    
+        <Menu.Item 
                 key='profile'
             >
             <Link to='/profile'>
             <ProfileOutlined />Profile
             </Link>
-            </Menu.Item>
-            <Menu.Item key='protected'>
+        </Menu.Item>
+
+        <Menu.Item key='protected'>
             <Link to='/protected'>
             <FileProtectOutlined />Protected
             </Link>
+        </Menu.Item>
+
+        <Menu.Item key='morepublic'>
+            <Link to='/morepublic'>
+            <FileProtectOutlined />More Public
+            </Link>
+          
         </Menu.Item>
     </Menu>
 </div>

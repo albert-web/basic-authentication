@@ -13,6 +13,8 @@ import Public from './Public';
 import Profile from './Profile';
 import Protected from './Protected';
 
+import morepublic from './morepublic';
+
 const Router = () => {
   
     const [current, setCurrent] = useState('home');
@@ -51,6 +53,12 @@ const Router = () => {
                 <Route 
                     exact path="/" 
                     component={Public}
+                />
+
+                <Route 
+                    exact 
+                    path="/morepublic" 
+                    component={morepublic} 
                 />
 
                 <Route 
