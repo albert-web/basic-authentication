@@ -4,12 +4,16 @@ import Container from './Container';
 
 const Protected = ({history}) => {
   useEffect(
-        () => {
-            Auth.currentAuthenticatedUser()
-                .catch((e) => {
-                    console.log(e);
-                    history.push('/profile');
-                })
+        async () => {
+            try {
+                await Auth.currentAuthenticatedUser();
+                console.log('User is authenticated!');
+            }
+            
+            catch(e) {
+                console.log(e);
+                history.push('/profile');
+            }
         }
         , []
     );
