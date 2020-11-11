@@ -10,12 +10,8 @@ HomeOutlined
 
 const Nav = ({current}) => {
     
-
-
-    const { current } = props
-    return (
-    <div>
-    <Menu 
+<div>
+<Menu 
         selectedKeys={[current]} 
         mode="horizontal"
     >
@@ -38,8 +34,10 @@ const Nav = ({current}) => {
             </Link>
         </Menu.Item>
     </Menu>
-    </div>
-)
+</div>
+
+   
+
 }
 
 export default Nav;
